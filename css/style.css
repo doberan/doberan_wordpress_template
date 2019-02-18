@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* common------------------------------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header------------------------------------------ */
+header {
+  width: 100vw;
+  height: 50px;
+  min-height: 5vh;
+  background: #42a42d
+}
+
+/* main------------------------------------------ */
+main {
+  width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  margin: 0 5vw;
+}
+
+main .containts{
+  width: 60vw;
+  background: #222222;
+}
+
+main .containts .contains-title{
+  padding: 8px;
+  margin: 0;
+  border-bottom: dotted 2px #ffffff;
+  color: #ffffff;
+}
+
+main .containts .list,
+main .sidebar .ranking .ranking-article-list{
+  height: 100px;
+  margin: 5px;
+  border: solid 1px #ffffdd;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+main .containts .list .image-box,
+main .sidebar .ranking .ranking-article-list .ranking-image-box {
+  width: 30%;
+  height: 100px;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 50px;
+  min-height: 50px;
+  background: #dd0000;
+}
+
+main .containts .list .detail-box,
+main .sidebar .ranking .ranking-article-list .ranking-detail-box {
+  width: 70%;
+}
+
+main .containts .list .detail-box .article-title,
+main .sidebar .ranking .ranking-article-list .ranking-detail-box .ranking-article-title {
+  color: #ffffff;
+  padding: 5px;
+  margin: 0;
+}
+
+main .containts .list .detail-box .article-description,
+main .sidebar .ranking .ranking-article-list .ranking-detail-box .ranking-article-description {
+  color: #ffffff;
+  padding: 5px;
+  margin: 0;
+}
+/* sideber------------------------------------------ */
+main .sidebar {
+  width:30vw;
+  min-height: 90vh;
+  background: #88dd88;
+}
+
+/* tag-cloud---------------------------------- */
+main .sidebar .tag-cloud,
+main .sidebar .ranking{
+  width: 90%;
+  background: #444444;
+  padding: 5% 0;
+  margin: 10px 5%;
+  border-radius: 5px;
+}
+
+main .sidebar .tag-cloud .tag-cloud-title,
+main .sidebar .ranking .ranking-title {
+  padding: 5px;
+  margin: 0;
+  color: #ffffff;
+  border-bottom: dotted 2px #ffffff;
+}
+
+main .sidebar .tag-cloud .tag-cloud-box {
+  background: #222222;
+  width: 100%;
+  height: 90%;
+}
+main .sidebar .tag-cloud .tag-cloud-box .tag-box {
+  display: inline-block;
+  background: #88dd88;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+main .sidebar .tag-cloud .tag-cloud-box .tag {
+  font-size: 14px;
+  color: #444444;
+}
+
+/* ranking---------------------------------- */
+main .sidebar .ranking {
+}
+main .sidebar .ranking .ranking-title {
+}
+main .sidebar .ranking .ranking-article-list{
+
+}
+main .sidebar .ranking .ranking-article-list .ranking-image-box{
+
+}
+main .sidebar .ranking .ranking-article-list .ranking-detail-box{
+
+}
+
+/* footer------------------------------------------ */
+footer {
+  height: 50px;
+  min-height: 5vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer small{
+  width: 100%;
+}
